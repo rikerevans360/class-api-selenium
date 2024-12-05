@@ -55,7 +55,46 @@ python dynamo/seed.py
 
 If everythin ran correctly, you should be able to go to the `/db_test` endpoint and see the seed data returned there.
 
+## Selenium Notes
+I have added the selenium and webdriver package to requirements.txt
 
+A WebDriver needs to be downloaded for automation. The ChromeDriver is here [ChromeDriver download](https://googlechromelabs.github.io/chrome-for-testing/)
+1. Determine Your Chrome Version:
+
+    * Open Chrome and navigate to ```chrome://settings/help``` to find your current version number.
+2. Download the Compatible ChromeDriver:
+
+    * Visit the [ChromeDriver Downloads](https://googlechromelabs.github.io/chrome-for-testing/) page.
+    * Select the version that matches your Chrome version. For example, if your Chrome version is 113, download ChromeDriver 113.0.5672.63. 
+3. Install ChromeDriver:
+
+    * Windows:
+      * Extract the downloaded ZIP file.
+      * Place ```chromedriver.exe``` in a directory of your choice.
+      * Add this directory to your system's PATH environment variable to make it accessible globally.
+    * macOS/Linux:
+      * Extract the downloaded ZIP file.
+      * Move ```chromedriver``` to ```/usr/local/bin/``` or another directory included in your PATH.
+      * Ensure the file is executable by running ```chmod +x chromedriver```.
+
+I have also installed Google Chrome in this repository so check with ```google-chrome --version```
+
+Run ```python test/test_selenium.py```
+
+See how it returns a random fact from Marathon Facts
+
+## Assignment Paragraph
+The Testing Prinicple that I looked into was UI/UX testing. Specifically the automated side to UI testing. This is where we can write a script that will navigate a webpage we provide to ensure funtionality. I chose to look into this as it is something I have run into in the past but never really got the chance to really use. Plus I also think its cool that there are tools that can be used to automatically use a webpage! I implemented it in the class api as a simple test script. It isnt built in with pytest but if you just run the script it can spit out text that can be used to ensure functionality. 
+
+Pros:
+* Lots of functionality
+* Allows us to check a physical webpage
+* Used with python
+
+Cons:
+* Hard to set up
+* A lot of ways to do one thing
+* WebDrivers need to be installed
 
 ## Testing
 ### To run all the tests at once:
