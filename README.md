@@ -92,7 +92,7 @@ Run ```python test/test_selenium.py```
 See how it returns a random fact from Marathon Facts
 
 ## Assignment Paragraph
-The Testing Prinicple that I looked into was UI/UX testing. Specifically the automated side to UI testing. This is where we can write a script that will navigate a webpage we provide to ensure funtionality. I chose to look into this as it is something I have run into in the past but never really got the chance to really use. Plus I also think its cool that there are tools that can be used to automatically use a webpage! I implemented it in the class api as a simple test script. It isnt built in with pytest but if you just run the script it can spit out text that can be used to ensure functionality. 
+The Testing principle that I looked into was UI/UX testing. Specifically the automated side of UI testing. UI/UX testing is the testing of the User Interface and the User Experience. This is where we can write a script that will navigate a webpage we provide to ensure functionality. It is used to simulate how users would navigate a site. This way we can check to make sure that links, buttons, fields, etc act as they should. This way we don't need to rely on developers to test their web pages manually, nor would we need to rely on random users to report issues when they find them. I chose to look into this as it is something I have run into in the past but never really got the chance to really use. Plus I also think its cool that there are tools that can be used to automatically use a webpage! I implemented it in the class api as a simple test script. It isn't built-in with pytest but if you just run the script it can spit out text that can be used to ensure functionality. 
 
 Pros:
 * Lots of functionality
