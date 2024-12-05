@@ -77,7 +77,15 @@ A WebDriver needs to be downloaded for automation. The ChromeDriver is here [Chr
       * Move ```chromedriver``` to ```/usr/local/bin/``` or another directory included in your PATH.
       * Ensure the file is executable by running ```chmod +x chromedriver```.
 
-I have also installed Google Chrome in this repository so check with ```google-chrome --version```
+You will also need to install Google Chrome within the instance. I tried to have it within the repository but it was literally 7mb too big.
+
+You can install with these commands though:
+
+```
+sudo apt-get install libxss1 libappindicator1 libindicator7
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome*.deb
+```
 
 Run ```python test/test_selenium.py```
 
